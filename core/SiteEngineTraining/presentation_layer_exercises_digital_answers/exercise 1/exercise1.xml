@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<batch xmlns="http://www.polopoly.com/polopoly/cm/xmlio">
+  <content>
+    <metadata>
+      <contentid>
+        <major>LayoutElement</major>
+        <externalid>training.mycss</externalid>
+      </contentid>
+      <input-template>
+        <externalid>p.siteengine.Stylesheet</externalid>
+      </input-template>
+      <security-parent>
+        <externalid>GreenfieldTimes.d</externalid>
+      </security-parent>
+    </metadata>
+    <component group="containsVelocityTemplate" name="value">false</component>
+    <component group="polopoly.Content" name="name">myCss</component>
+    <component group="css" name="value">
+.topBorderLayout.header {
+  background-image: url("");
+}
+.borderLayoutMastHead.menu.menuTop a {
+  text-decoration: none;
+  color: #FF0000;
+}
+.menu.menuTop a {
+  text-decoration: none;
+  color: #FF0000;
+}
+body {
+  background-color: #FFCC99;
+}   
+    </component>
+  </content>
+
+  <content>
+    <metadata>
+      <contentid>
+        <externalid>GreenfieldTimes.d</externalid>
+      </contentid>
+    </metadata>
+    <contentlist group="css">
+      <entry>
+        <metadata>
+          <referredContent>
+            <contentid>
+              <externalid>training.mycss</externalid>
+            </contentid>
+          </referredContent>
+        </metadata>
+      </entry>
+    </contentlist>
+  </content>
+</batch>

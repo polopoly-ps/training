@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+    <input-template name="TwitterElement" label="Twitter Element">
+        <policy>example.layout.element.ElementPolicy</policy>
+        <editor>com.polopoly.cm.app.widget.OTopPolicyWidget</editor>
+        <viewer>com.polopoly.cm.app.widget.OTopPolicyWidget</viewer>
+        <type>LayoutElement</type>
+        <param name="ViewState_insert">false</param>
+        <param name="EditState_saveAndClose">true</param>
+        <param name="EditState_saveAndInsert">false</param>
+        <param name="EditState_saveAndFastInsert">false</param>
+        <param name="EditState_saveAndView">true</param>
+        <param name="EditNewState_saveAndClose">false</param>
+        <param name="EditNewState_saveAndInsert">false</param>
+        <param name="EditNewState_saveAndFastInsert">true</param>
+        <param name="EditNewState_saveAndView">false</param>
+        <param name="templateIcon">bookmark.png</param>
+        <param name="renderTemplateIconInSelect">true</param>
+		<editor contextName="orchid_TOCENTRY">example.widget.OContentListEntryBasePolicyWidget</editor>
+    	<viewer contextName="orchid_TOCENTRY">example.widget.OContentListEntryBasePolicyWidget</viewer>
+
+        <field name="name" input-template="p.ContentName" label="cm.label.Name" />
+		<field name="size" input-template="p.TextInput" label="Number of items to display">
+			<policy>com.polopoly.cm.app.policy.NumberInputPolicy</policy>
+			<param name="type">int</param>
+			<param name="size">3</param>
+		</field>
+        <field name="twitterHash" input-template="p.TextInput" label="Twitter Hash"/>
+
+        <output-templates mode="www">
+            <id>TwitterElement.ot</id>
+        </output-templates>
+    </input-template>
+
+	<output-template name="TwitterElement.ot" input-template="p.siteengine.ElementOutputTemplate">
+    <content-xml>
+      <component group="output/modelKeyMode" name="selected">no-cache</component>
+      <contentref group="output/renderer" name="selected">
+        <contentid>
+          <externalid>p.siteengine.VelocityFileRenderer</externalid>
+        </contentid>
+      </contentref>
+      <component group="output/renderer/selected/defaultVelocityViewFileName" name="value">/WEB-INF/velocity/www/twitterelement.vm</component>
+    </content-xml>
+  </output-template>
+ </template-definition> 

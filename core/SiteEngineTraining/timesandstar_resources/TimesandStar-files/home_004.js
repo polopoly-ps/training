@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/36ff/0/0/%2a/v;203458716;0-0;0;24325241;237-250/250;26693924/26711781/1;;~sscs=%3fhttp://scripts.affiliatefuture.com/AFClick.asp?affiliateID=127693&merchantID=282&programmeID=1122&mediaID=4496&tracking=&url="><img src="http://m1.2mdn.net/viewad/1763788/51977.gif" border=0 alt="Virgin Atlantic"></a>');

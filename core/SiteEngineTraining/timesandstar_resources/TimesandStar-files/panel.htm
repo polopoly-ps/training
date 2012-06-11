@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>Untitled Page</title>
+
+
+
+
+
+    <style type="text/css">
+        BODY{
+            font-family:arial, sans-serif;
+            font-size:12px;
+        }
+        #panel{
+            width:224px;
+            height:90px;
+        }
+        
+        #panel A{
+            color:#003366;
+            text-decoration:none;
+        }
+        #panel A:Hover{
+            text-decoration:underline;
+        }
+        #panel_header{
+            background-color:#003366;
+            width:216px;
+            padding:4px;
+            font-weight:bold;
+            border:solid 1px #003366;
+            color:#ffffff;
+            height:16px;
+        }
+        #panel_body{
+            width:224px;
+            height:61px;
+            border:solid 1px #003366;        
+        }
+        #panel_body_left{
+            float:left;
+            width:80px;
+        }
+        #panel_body_right{
+            float:left;
+            width:126px;
+            padding-top:2px;
+            padding-left:0px;
+            padding-right:4px;
+            padding-bottom:4px;
+        }
+    </style></head><body>
+    <form name="form1" method="post" action="panel.aspx?location=4" id="form1">
+<div>
+<input name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTE0ODExOTI2Mg9kFgICAw9kFgQCAQ8WAh4EVGV4dAUKV29ya2luZ3RvbmQCAw8WAh4LXyFJdGVtQ291bnQCARYCZg9kFgJmDxUFFS4uL2ltZy93ZWF0aGVyLzEyLkdJRhNTaG93ZXJzIChBTSBhbmQgUE0pAjE1ATYwaHR0cDovL3d3dy50aW1lc2FuZHN0YXIuY28udWsvbG9jYWxfaW5mby93ZWF0aGVyZGSI0UpVDHSuJik+XafLX+Vo9Fp6Tw==" type="hidden">
+</div>
+
+    <div id="panel">
+        <div id="panel_header">Weather for Workington</div>
+        
+                <div id="panel_body">
+                    <div id="panel_body_left"><img src="panel_data/12.GIF"></div>
+                    <div id="panel_body_right">
+                        <div id="panel_body_right_forecast">Showers (AM and PM)</div>
+                        <div id="panel_body_right_temperature">High 15°C, Low 6°C</div>
+                        <div id="panel_body_right_link"><a href="#" onclick="window.parent.location.href='http://www.timesandstar.co.uk/local_info/weather';">See forecast in detail...</a></div>
+                    </div>
+                </div>            
+            
+    </div>
+    </form>
+</body></html>

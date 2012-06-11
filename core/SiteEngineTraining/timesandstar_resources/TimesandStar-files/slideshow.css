@@ -1,0 +1,45 @@
+div.gall {
+	border: solid 1px #cccccc;
+	margin: 20px 10px 20px 10px;;
+	width: 358px;
+	padding: 10px;
+	text-align: center;
+}
+
+div#gall {
+	background-image:url(../img/bg/shaded.jpg);
+}
+
+div#ctrl {
+	background-image:url(../img/bg/menu.jpg);
+	background-repeat:repeat-x;	
+	overflow: auto;
+}
+
+p.under {
+	background-image:url(../img/bg/menu.jpg);
+	background-repeat:repeat-x;
+	border-top: solid 1px #cccccc;
+	margin-top: 5px;
+	padding-top:10px;
+}
+
+div#title {
+	font-size: 16px;
+	width: 265px;
+	display: run-in;
+	font-weight: bold;
+	padding: 0px 10px 10px 10px;
+	float: left;
+}
+
+div.pict {
+	float: left;
+}
+
+div#wrap {
+	margin: 0px 10px 0px 10px;
+
+	overflow: auto;
+	text-align: centre;
+}

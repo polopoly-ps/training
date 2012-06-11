@@ -1,0 +1,1 @@
+document.write('<a target="_blank" href="http://ad.doubleclick.net/click;h=v8/36ff/0/0/%2a/f;191486660;0-0;0;24325241;3454-728/90;25056472/25074325/1;;~sscs=%3fhttp://3276.e-printphoto.co.uk/ts/"><img src="http://m1.2mdn.net/viewad/1726539/TS-photosales-728x90.jpg" border=0 alt="Click here to order your photos"></a>');
