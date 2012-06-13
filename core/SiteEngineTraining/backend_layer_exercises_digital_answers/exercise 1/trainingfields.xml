@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
-  <input-template name="training.TextArea">
-    <policy>com.polopoly.cm.app.policy.SingleValuePolicy</policy> 
-    <editor>com.polopoly.cm.app.widget.OTextAreaPolicyWidget</editor>
-    <viewer>com.polopoly.cm.app.widget.OTextOutputPolicyWidget</viewer>
-  </input-template>
-</template-definition> 
-
