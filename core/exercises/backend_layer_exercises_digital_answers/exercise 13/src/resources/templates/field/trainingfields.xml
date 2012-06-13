@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  
+	<input-template name="training.ImageWidget">
+	  <policy>training.content.image.MyImagePolicy</policy>
+	  <editor>training.widget.MyImagePolicyWidget</editor>
+	  <viewer>training.widget.MyImagePolicyWidget</viewer>
+	</input-template>  
+</template-definition> 
+

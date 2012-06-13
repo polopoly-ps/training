@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<batch xmlns="http://www.polopoly.com/polopoly/cm/xmlio">
+  <content>
+    <metadata>
+      <contentid>
+        <major>Article</major>
+        <externalid>training.myTrainingArticle</externalid>
+      </contentid>
+      <input-template>
+        <externalid>example.StandardArticle</externalid>
+      </input-template>
+    </metadata>
+    <component name="name" group="polopoly.Content">My training article</component>
+    <component name="value" group="body">This is the body text of the article
+    </component>
+    <component name="value" group="lead">This is the lead of the article
+    </component>
+  </content>
+</batch>

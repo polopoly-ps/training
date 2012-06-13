@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  <input-template name="training.UrlViewerElement" label="URL Viewer">
+    <policy>example.layout.element.ElementPolicy</policy>
+    <editor>com.polopoly.cm.app.widget.OTopPolicyWidget</editor>
+    <viewer>com.polopoly.cm.app.widget.OTopPolicyWidget</viewer>
+    <param name="ViewState_insert">false</param>
+    <param name="ViewState_refresh">true</param>
+    <param name="EditState_saveAndClose">true</param>
+    <param name="EditState_saveAndInsert">false</param>
+    <param name="EditState_saveAndFastInsert">false</param>
+    <param name="EditState_saveAndView">true</param>
+    <param name="EditNewState_saveAndClose">false</param>
+    <param name="EditNewState_saveAndInsert">false</param>
+    <param name="EditNewState_saveAndFastInsert">true</param>
+    <param name="EditNewState_saveAndView">false</param>
+    <type>LayoutElement</type>
+    <editor contextName="orchid_TOCENTRY">
+        com.atex.plugins.baseline.widget.OContentListEntryBasePolicyWidget</editor>
+    <viewer contextName="orchid_TOCENTRY">
+        com.atex.plugins.baseline.widget.OContentListEntryBasePolicyWidget</viewer>
+    <field name="name" input-template="p.ContentName" label="cm.label.Title"
+        required="false" />
+    <field name="url" input-template="p.TextInput" label="URL" required="false" />
+    <output-templates mode="www">
+      <id>training.UrlViewerElement.ot</id>
+    </output-templates>
+  </input-template>
+  <output-template name="training.UrlViewerElement.ot" input-template="p.siteengine.ElementOutputTemplate">
+    <content-xml>
+      <contentref group="output/controller" name="selected">
+        <contentid>
+          <externalid>p.siteengine.JavaClassRenderController</externalid>
+        </contentid>
+      </contentref>
+      <component group="output/controller/selected/renderControllerClass" name="value">training.layout.element.urlviewer.RenderControllerUrlViewerElement</component>
+      <component group="output/modelKeyMode" name="selected">default</component>
+      <contentref group="output/renderer" name="selected">
+        <contentid>
+          <externalid>p.siteengine.VelocityFileRenderer</externalid>
+        </contentid>
+      </contentref>
+      <component group="output/renderer/selected/defaultVelocityViewFileName"
+    name="value">/WEB-INF/velocity/www/urlviewer.vm</component>
+    </content-xml>
+  </output-template>
+</template-definition>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template-definition version="1.0" xmlns="http://www.polopoly.com/polopoly/cm/app/xml">
+  <input-template name="training.TextArea">
+    <policy>training.content.text.ConstrainedTextAreaPolicy</policy> 
+    <editor>training.widget.MyTextAreaPolicyWidget</editor>
+    <viewer>com.polopoly.cm.app.widget.OTextOutputPolicyWidget</viewer>
+  </input-template>
+</template-definition> 
+
